@@ -5,12 +5,12 @@ import { NormalText } from 'src/components/text/normal-text';
 import { BlueButton } from 'src/components/button/blue-button';
 import { NextIcon } from 'src/components/icon/next-icon';
 import { ContentContainer } from 'src/components/container/content-container';
-
-import { LANDING_BG } from 'src/config/images';
+import { LandingBackground } from './landing-bg';
 
 export const Landing = () => {
   return (
     <LandContainer>
+      <LandingBackground />
       <ContentContainer>
         <LandingContent>
           <ExtraHeaderText>Fastest & Secure platform to invest in crypto</ExtraHeaderText>
@@ -34,22 +34,6 @@ const LandContainer = styled.div`
   height: 680px;
 
   z-index: 0;
-
-  background-image: url(${LANDING_BG});
-  background-repeat: no-repeat;
-  background-size: 120% 100%;
-  background-position: 0px 0px;
-
-  @media screen and (max-width: 768px) {
-    height: 780px;
-    background-position: 0px 140px;
-  }
-
-  @media screen and (max-width: 425px) {
-    height: 600px;
-    background-size: 100%;
-    background-position: 0px 140px;
-  }
 `;
 
 const LandingContent = styled.div`

@@ -54,6 +54,8 @@ const HeaderWrapper = styled.div`
   border-bottom: 1px solid ${(props) => props.theme.darkGrey};
 
   background-color: ${(props) => props.theme.black};
+
+  z-index: 30;
 `;
 
 const ContentWrapper = styled.div`
