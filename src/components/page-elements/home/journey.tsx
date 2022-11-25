@@ -1,8 +1,8 @@
-import React from 'react';
-import { HeaderText } from 'src/components/text/header-text';
-import { NormalText } from 'src/components/text/normal-text';
-import { SiDiscord, SiTwitter } from 'react-icons/si';
-import styled from 'styled-components';
+import React from 'react'
+import { HeaderText } from 'src/components/text/header-text'
+import { NormalText } from 'src/components/text/normal-text'
+import { SiDiscord, SiTwitter } from 'react-icons/si'
+import styled from 'styled-components'
 
 export const Journey = () => {
   return (
@@ -22,8 +22,8 @@ export const Journey = () => {
         </SocialBox>
       </JourneyWrapper>
     </ContainerWrapper>
-  );
-};
+  )
+}
 
 const ContainerWrapper = styled.div`
   padding: 0 5rem;
@@ -33,7 +33,7 @@ const ContainerWrapper = styled.div`
   @media screen and (max-width: 640px) {
     padding: 0 2rem;
   }
-`;
+`
 
 const JourneyWrapper = styled.div`
   width: 100%;
@@ -42,18 +42,18 @@ const JourneyWrapper = styled.div`
   flex-direction: column;
   text-align: center;
   gap: 20px;
-`;
+`
 
 const SocialBox = styled.div`
   margin-top: 50px;
   display: flex;
   gap: 20px;
   cursor: pointer;
-  margin-bottom: 200px;
+  margin-bottom: 80px;
   @media screen and (max-width: 640px) {
     margin-top: 20px;
   }
-`;
+`
 
 const SocialIcon = styled.div`
   width: 75px;
@@ -72,4 +72,4 @@ const SocialIcon = styled.div`
     width: 42px;
     height: 42px;
   }
-`;
+`

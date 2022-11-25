@@ -4,9 +4,10 @@ import { Container } from '../components/container/container';
 import { Landing } from '../components/page-elements/home/landing';
 import { Welcome } from '../components/page-elements/home/welcome';
 import { Features } from '../components/page-elements/home/feature';
-import { WhyTigris } from 'src/components/page-elements/home/whytigris';
-import { ContentContainer } from 'src/components/container/content-container';
-import { Journey } from 'src/components/page-elements/home/journey';
+import { WhyTigris } from '../components/page-elements/home/whytigris';
+import { ContentContainer } from '../components/container/content-container';
+import { Journey } from '../components/page-elements/home/journey';
+import { Governance } from '../components/page-elements/home/governance';
 
 export const Home = () => {
   return (
@@ -17,6 +18,7 @@ export const Home = () => {
           <Welcome />
           <Features />
           <WhyTigris />
+          <Governance />
           <Journey />
         </ContentContainer>
       </Container>
